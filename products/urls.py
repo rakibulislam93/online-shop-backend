@@ -19,4 +19,7 @@ urlpatterns = [
     path('orders/<int:pk>/',views.OrderUpdateView.as_view(),name='order_update'),
     path('seller_orders/',views.SellerOwnProductOrder.as_view(),name='sellerOwn_product_orders'),
     
+    # only create for request to the server..after 14 minitue auto run it..
+    path('test_request/',views.test.as_view(),name='test_request')
+    
 ]

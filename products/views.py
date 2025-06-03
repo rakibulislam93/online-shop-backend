@@ -178,3 +178,7 @@ class ReviewViewset(viewsets.ModelViewSet):
     
     def perform_create(self, serializer):
         serializer.save(reviewer=self.request.user)
+
+class test(APIView):
+    def get(self,request):
+        return Response('hello rakib')
