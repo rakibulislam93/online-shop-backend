@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reset Password</title>
+</head>
+<body>
+    <h2>Hello {{ user.username }} 👋,</h2>
+    <p>Thank you for requesting reset password!</p>
+    <p>Please click the button below to reset your password:</p>
+    <a href="{{ reset_link }}" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">Reset Password</a>
+    <p>If you didn’t request this, please ignore this email.</p>
+</body>
+</html>
