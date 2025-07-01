@@ -149,7 +149,7 @@ class PasswordResetView(APIView):
             reset_link = f'http://127.0.0.1:8000/api/auth/account/reset_pass/{uid}/{token}/'
             
             subject = 'Reset your Password'
-            from_email = 'rakibulislamarif793@gmail.com'
+            from_email = settings.EMAIL_HOST_USER
             to_email = email
             html_content = render_to_string('reset_pass.html',{
                 'user':user,
