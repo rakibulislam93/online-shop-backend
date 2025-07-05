@@ -47,25 +47,30 @@ The project is designed to support three user roles: Admin, Seller, and Customer
     # On macOS/Linux:
     source venv/bin/activate
 3. Install Dependencies :
-     pip install -r requirements.txt
-4. Create .env file :
-    EMAIL_HOST_USER=your_email_name
-    EMAIL_HOST_PASSWORD=your_email_password
    
-    DB_NAME=your_postgres_db_name
-    DB_USER=your_postgres_user
-    DB_PASSWORD=your_postgres_password
-    DB_HOST=your_db_host
-    DB_PORT=your_db_post
-
-    OPENROUTER_API_KEY=your_deepseek_api_key
-5. Apply Migrations :
+     pip install -r requirements.txt
+   
+5. Create .env file :
+   
+    <details>
+        EMAIL_HOST_USER=your_email_name
+        EMAIL_HOST_PASSWORD=your_email_password
+        DB_NAME=your_postgres_db_name
+        DB_USER=your_postgres_user
+        DB_PASSWORD=your_postgres_password
+        DB_HOST=your_db_host
+        DB_PORT=your_db_post
+        OPENROUTER_API_KEY=your_deepseek_api_key
+        
+    </details>
+6. Apply Migrations :
    python manage.py makemigrations
    python manage.py migrate
-6. Create Superuser :
+7. Create Superuser :
    python manage.py createsuperuser
-7. Run the Development Server
-   python manage.py runserver
+   
+9. Run the Development Server : 
+   **python manage.py runserver**
 
 ## 👤 Author
 
