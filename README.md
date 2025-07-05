@@ -34,7 +34,8 @@ The project is designed to support three user roles: Admin, Seller, and Customer
 ## Database : PostgreSQL, Default(sqlite3)
 ## Deployment : Render.com , Supabase(for postgres DB)
 
-###API Documentation
+### API Documentation
+
 http://127.0.0.1:8000/api/docs/
 http://127.0.0.1:8000/api/redoc/
 
