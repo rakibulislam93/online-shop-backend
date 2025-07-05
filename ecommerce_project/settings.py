@@ -41,9 +41,11 @@ INSTALLED_APPS = [
     # thirth party
     'rest_framework',
     'django_filters',
+    'drf_spectacular', #for documentaion
     #local
     'accounts',
     'products',
+    'chatapp',
     
 ]
 
@@ -59,7 +61,8 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend',
         'rest_framework.filters.SearchFilter',
-    ]
+    ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 from datetime import timedelta
@@ -181,4 +184,13 @@ DATABASES = {
         'HOST': config('DB_HOST'),
         'PORT': config('DB_PORT'),
     }
+}
+
+#API Documentation 
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Kinakata.com API',
+    'DESCRIPTION': 'Kinakata.com description',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
 }
