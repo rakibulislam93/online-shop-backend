@@ -7,32 +7,32 @@ The project is designed to support three user roles: Admin, Seller, and Customer
 🚀 Features
 🧑‍💼 Admin Features
 
-# Full-featured admin dashboard
-# Manage all users: admins, sellers, and customers
-# Perform CRUD operations on all products
-# View and manage all customer orders
-# Platform moderation and system-wide access
+## Full-featured admin dashboard
+## Manage all users: admins, sellers, and customers
+## Perform CRUD operations on all products
+## View and manage all customer orders
+## Platform moderation and system-wide access
 
 🛍️ Seller Features
 
-# Dedicated seller dashboard
-# Perform CRUD operations only on their own products
-# Track orders made on their products
-# View and manage their inventory
+## Dedicated seller dashboard
+## Perform CRUD operations only on their own products
+## Track orders made on their products
+## View and manage their inventory
 
 👤 Customer Features
 
-# Secure registration and login system
-# Browse products by category or search
-# View detailed product information
-# Place orders and view personal order history
-# JWT-based authentication for safe and smooth API usage
+## Secure registration and login system
+## Browse products by category or search
+## View detailed product information
+## Place orders and view personal order history
+## JWT-based authentication for safe and smooth API usage
 
 🛠️ Technology Stack
-# Backend : Django,Django Rest Framework (DRF)
-# Frontend : HTML,css,Vanilla JS
-# Database : PostgreSQL, Default(sqlite3)
-# Deployment : Render.com , Supabase(for postgres DB)
+## Backend : Django,Django Rest Framework (DRF)
+## Frontend : HTML,css,Vanilla JS
+## Database : PostgreSQL, Default(sqlite3)
+## Deployment : Render.com , Supabase(for postgres DB)
 
 🧩 Installation & Setup Guide
 
