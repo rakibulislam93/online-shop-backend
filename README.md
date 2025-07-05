@@ -51,22 +51,24 @@ The project is designed to support three user roles: Admin, Seller, and Customer
      pip install -r requirements.txt
    
 5. Create .env file :
-   
-    <details>
-        EMAIL_HOST_USER=your_email_name
+   <details>
+       <summary>📄 Create `.env` File</summary>
+       EMAIL_HOST_USER=your_email_name
         EMAIL_HOST_PASSWORD=your_email_password
-        DB_NAME=your_postgres_db_name
-        DB_USER=your_postgres_user
-        DB_PASSWORD=your_postgres_password
-        DB_HOST=your_db_host
-        DB_PORT=your_db_post
-        OPENROUTER_API_KEY=your_deepseek_api_key
-        
-    </details>
-6. Apply Migrations :
+
+    DB_NAME=your_postgres_db_name
+    DB_USER=your_postgres_user
+    DB_PASSWORD=your_postgres_password
+    DB_HOST=your_db_host
+    DB_PORT=your_db_port
+
+   OPENROUTER_API_KEY=your_deepseek_api_key
+   </details>
+   
+7. Apply Migrations :
    python manage.py makemigrations
    python manage.py migrate
-7. Create Superuser :
+8. Create Superuser :
    python manage.py createsuperuser
    
 9. Run the Development Server : 
