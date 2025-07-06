@@ -1,44 +1,65 @@
-# Kinakata.com
+# 🛒 Kinakata.com — eCommerce Backend (Django REST Framework)
 
-## Project Description
-Kinakata.com is a complete eCommerce backend solution developed using Django REST Framework (DRF). It offers a secure, scalable, and role-based API system for building a full-featured online shopping platform.
-The project is designed to support three user roles: Admin, Seller, and Customer—each with separate dashboards and permissions. Admins can manage the entire platform, sellers can manage their own products and orders, and customers can browse products and place orders. This modular architecture makes it easy to integrate with any modern frontend (React, Vue, Next.js, etc.).
+**Kinakata.com** is a complete eCommerce backend solution developed using **Django REST Framework (DRF)**. It provides a secure, scalable, and role-based API system, making it easy to build and integrate with any modern frontend like React, Vue, or plain HTML/JS.
 
-🚀 Features
-🧑‍💼 Admin Features
+The backend supports **three user roles** with distinct features and dashboards:
 
-## Full-featured admin dashboard
-## Manage all users: admins, sellers, and customers
-## Perform CRUD operations on all products
-## View and manage all customer orders
-## Platform moderation and system-wide access
+- **Admin** — full control over the platform
+- **Seller** — manage own products and orders
+- **Customer** — browse, order, and view purchase history
 
-🛍️ Seller Features
+> 📁 **Frontend Repo:** [Kinakata Frontend](https://github.com/rakibulislam93/online-shop-frontend)
 
-## Dedicated seller dashboard
-## Perform CRUD operations only on their own products
-## Track orders made on their products
-## View and manage their inventory
+---
 
-👤 Customer Features
+## 🚀 Features
 
-## Secure registration and login system
-## Browse products by category or search
-## View detailed product information
-## Place orders and view personal order history
-## JWT-based authentication for safe and smooth API usage
+### 🧑‍💼 Admin Features
+- Full-featured admin dashboard
+- Manage all users (admins, sellers, customers)
+- CRUD operations on all products
+- View and manage all orders
+- Platform moderation
 
-🛠️ Technology Stack
-## Backend : Django,Django Rest Framework (DRF)
-## Frontend : HTML,css,Vanilla JS
-## Database : PostgreSQL, Default(sqlite3)
-## Deployment : Render.com , Supabase(for postgres DB)
+### 🛍️ Seller Features
+- Dedicated seller dashboard
+- CRUD operations on **own products**
+- View & track orders on own products
+- Inventory management
 
-### API Documentation
+### 👤 Customer Features
+- Secure registration & login system
+- Browse products by category or search
+- View product details
+- Place orders & view order history
+- JWT-based authentication
 
-http://127.0.0.1:8000/api/docs/
+---
 
-http://127.0.0.1:8000/api/redoc/
+## 🛠️ Technology Stack
+
+- **Backend:** Django, Django REST Framework (DRF)  
+- **Frontend:** HTML, CSS, Vanilla JavaScript *(separate repo)*  
+- **Database:** PostgreSQL / SQLite3 (default)  
+- **Deployment:** Render.com (Backend), Supabase (PostgreSQL)  
+
+---
+
+## 📚 API Documentation
+
+- Swagger UI: [http://127.0.0.1:8000/api/docs/](http://127.0.0.1:8000/api/docs/)
+- Redoc UI: [http://127.0.0.1:8000/api/redoc/](http://127.0.0.1:8000/api/redoc/)
+
+---
+
+## ⚙️ Installation & Setup Guide
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/rakibulislam93/online-shop-backend.git
+cd online-shop-backend
+
 
 🧩 Installation & Setup Guide
 
@@ -56,20 +77,21 @@ http://127.0.0.1:8000/api/redoc/
    
      pip install -r requirements.txt
    
-5. Create .env file :
-   <details>
-       <summary>📄 Create `.env` File</summary>
-       EMAIL_HOST_USER=your_email_name
-        EMAIL_HOST_PASSWORD=your_email_password
+# Example .env file
+SECRET_KEY=your_secret_key
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,localhost
 
-    DB_NAME=your_postgres_db_name
-    DB_USER=your_postgres_user
-    DB_PASSWORD=your_postgres_password
-    DB_HOST=your_db_host
-    DB_PORT=your_db_port
+# Email Config
+EMAIL_HOST_USER=your_email
+EMAIL_HOST_PASSWORD=your_email_password
 
-   OPENROUTER_API_KEY=your_deepseek_api_key
-   </details>
+# PostgreSQL DB config (if used)
+DB_NAME=your_db_name
+DB_USER=your_db_user
+DB_PASSWORD=your_db_password
+DB_HOST=your_db_host
+DB_PORT=5432
    
 7. Apply Migrations :
    python manage.py makemigrations
