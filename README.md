@@ -109,7 +109,7 @@ python manage.py createsuperuser
 ```
 python manage.py runserver
 ```
-
+---
 ## 👤 Author
 
 **Rakibul Islam**  
