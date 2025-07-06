@@ -60,7 +60,7 @@ The backend supports **three user roles** with distinct features and dashboards:
 git clone https://github.com/rakibulislam93/online-shop-backend.git
 cd online-shop-backend
 ```
-### 2. Create Virtual environment :
+### 2. Create Virtual environment
 ```bash
 python -m venv venv
 ```
@@ -72,12 +72,13 @@ venv\Scripts\activate
 ```
 source venv/bin/activate
 ```
-## 3. Install Dependencies :
+### 3. Install Dependencies
 ```
 pip install -r requirements.txt
 ```
    
-# Example .env file
+### Config .env file
+```
 SECRET_KEY=your_secret_key
 DEBUG=True
 ALLOWED_HOSTS=127.0.0.1,localhost
@@ -92,15 +93,22 @@ DB_USER=your_db_user
 DB_PASSWORD=your_db_password
 DB_HOST=your_db_host
 DB_PORT=5432
+```
    
-7. Apply Migrations :
-   python manage.py makemigrations
-   python manage.py migrate
-8. Create Superuser :
-   python manage.py createsuperuser
+### 7. Apply Migrations
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+### 8. Create Superuser
+```
+python manage.py createsuperuser
+```
    
-9. Run the Development Server : 
-   **python manage.py runserver**
+### 9. Run the Development Server
+```
+python manage.py runserver
+```
 
 ## 👤 Author
 
