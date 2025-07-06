@@ -59,17 +59,23 @@ The backend supports **three user roles** with distinct features and dashboards:
 ```bash
 git clone https://github.com/rakibulislam93/online-shop-backend.git
 cd online-shop-backend
-
-2. Create Virtual environment :
-     python -m venv venv
-  #.....Activate it......#
-    # On Windows:
-    venv\Scripts\activate
-    # On macOS/Linux:
-    source venv/bin/activate
-3. Install Dependencies :
-   
-     pip install -r requirements.txt
+```
+### 2. Create Virtual environment :
+```bash
+python -m venv venv
+```
+### On Windows
+```bash
+venv\Scripts\activate
+```
+### On macOS/Linux
+```
+source venv/bin/activate
+```
+## 3. Install Dependencies :
+```
+pip install -r requirements.txt
+```
    
 # Example .env file
 SECRET_KEY=your_secret_key
