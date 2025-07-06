@@ -60,12 +60,6 @@ The backend supports **three user roles** with distinct features and dashboards:
 git clone https://github.com/rakibulislam93/online-shop-backend.git
 cd online-shop-backend
 
-
-🧩 Installation & Setup Guide
-
-1. Clone the Repository
-    git clone https://github.com/rakibulislam93/online-shop-backend.git
-    cd online-shop-backend
 2. Create Virtual environment :
      python -m venv venv
   #.....Activate it......#
